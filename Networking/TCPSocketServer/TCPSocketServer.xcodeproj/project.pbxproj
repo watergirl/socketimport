@@ -1,0 +1,257 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		854C7C31183C508800612DC9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 854C7C30183C508800612DC9 /* CoreFoundation.framework */; };
+		854C7C34183C508800612DC9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 854C7C33183C508800612DC9 /* main.c */; };
+		854C7C36183C508800612DC9 /* TCPSocketServer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 854C7C35183C508800612DC9 /* TCPSocketServer.1 */; };
+		854C7C56183C5DC800612DC9 /* CFSocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = 854C7C55183C5DC800612DC9 /* CFSocketServer.c */; };
+		8576D26018DFD3430053FACD /* IPAddress.c in Sources */ = {isa = PBXBuildFile; fileRef = 8576D25F18DFD3430053FACD /* IPAddress.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		854C7C2B183C508800612DC9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				854C7C36183C508800612DC9 /* TCPSocketServer.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		854C7C2D183C508800612DC9 /* TCPSocketServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TCPSocketServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		854C7C30183C508800612DC9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		854C7C33183C508800612DC9 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		854C7C35183C508800612DC9 /* TCPSocketServer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TCPSocketServer.1; sourceTree = "<group>"; };
+		854C7C54183C5D8E00612DC9 /* CFSocketServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFSocketServer.h; sourceTree = "<group>"; };
+		854C7C55183C5DC800612DC9 /* CFSocketServer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CFSocketServer.c; sourceTree = "<group>"; };
+		8576D25E18DFD2FE0053FACD /* IPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAddress.h; sourceTree = "<group>"; };
+		8576D25F18DFD3430053FACD /* IPAddress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IPAddress.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		854C7C2A183C508800612DC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854C7C31183C508800612DC9 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		854C7C24183C508800612DC9 = {
+			isa = PBXGroup;
+			children = (
+				854C7C32183C508800612DC9 /* TCPSocketServer */,
+				854C7C2F183C508800612DC9 /* Frameworks */,
+				854C7C2E183C508800612DC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		854C7C2E183C508800612DC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				854C7C2D183C508800612DC9 /* TCPSocketServer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		854C7C2F183C508800612DC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				854C7C30183C508800612DC9 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		854C7C32183C508800612DC9 /* TCPSocketServer */ = {
+			isa = PBXGroup;
+			children = (
+				854C7C33183C508800612DC9 /* main.c */,
+				854C7C54183C5D8E00612DC9 /* CFSocketServer.h */,
+				854C7C55183C5DC800612DC9 /* CFSocketServer.c */,
+				8576D25E18DFD2FE0053FACD /* IPAddress.h */,
+				8576D25F18DFD3430053FACD /* IPAddress.c */,
+				854C7C35183C508800612DC9 /* TCPSocketServer.1 */,
+			);
+			path = TCPSocketServer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		854C7C2C183C508800612DC9 /* TCPSocketServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 854C7C39183C508800612DC9 /* Build configuration list for PBXNativeTarget "TCPSocketServer" */;
+			buildPhases = (
+				854C7C29183C508800612DC9 /* Sources */,
+				854C7C2A183C508800612DC9 /* Frameworks */,
+				854C7C2B183C508800612DC9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TCPSocketServer;
+			productName = TCPSocketServer;
+			productReference = 854C7C2D183C508800612DC9 /* TCPSocketServer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		854C7C25183C508800612DC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Tarena;
+			};
+			buildConfigurationList = 854C7C28183C508800612DC9 /* Build configuration list for PBXProject "TCPSocketServer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 854C7C24183C508800612DC9;
+			productRefGroup = 854C7C2E183C508800612DC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				854C7C2C183C508800612DC9 /* TCPSocketServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		854C7C29183C508800612DC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854C7C56183C5DC800612DC9 /* CFSocketServer.c in Sources */,
+				854C7C34183C508800612DC9 /* main.c in Sources */,
+				8576D26018DFD3430053FACD /* IPAddress.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		854C7C37183C508800612DC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		854C7C38183C508800612DC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		854C7C3A183C508800612DC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		854C7C3B183C508800612DC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		854C7C28183C508800612DC9 /* Build configuration list for PBXProject "TCPSocketServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				854C7C37183C508800612DC9 /* Debug */,
+				854C7C38183C508800612DC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		854C7C39183C508800612DC9 /* Build configuration list for PBXNativeTarget "TCPSocketServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				854C7C3A183C508800612DC9 /* Debug */,
+				854C7C3B183C508800612DC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 854C7C25183C508800612DC9 /* Project object */;
+}

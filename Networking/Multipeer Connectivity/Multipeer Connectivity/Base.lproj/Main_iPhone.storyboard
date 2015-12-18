@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F25a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="TRViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pz-bg-AWM">
+                                <rect key="frame" x="20" y="20" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="syf-j7-0SF"/>
+                                </constraints>
+                                <state key="normal" title="Browser">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="browserButtonTap" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oxd-Zr-bJh"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HH4-Fe-zhF">
+                                <rect key="frame" x="20" y="58" width="280" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5v6-uF-Hi7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BWy-n6-7Ha">
+                                <rect key="frame" x="20" y="96" width="280" height="364"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BWy-n6-7Ha" secondAttribute="trailing" constant="20" id="0ZW-mX-lxy"/>
+                            <constraint firstItem="9Pz-bg-AWM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Fgh-sy-amZ"/>
+                            <constraint firstAttribute="trailing" secondItem="HH4-Fe-zhF" secondAttribute="trailing" constant="20" id="Juu-uG-fjG"/>
+                            <constraint firstItem="BWy-n6-7Ha" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="O2w-16-8yz"/>
+                            <constraint firstAttribute="trailing" secondItem="9Pz-bg-AWM" secondAttribute="trailing" constant="20" id="VYH-kT-9Xr"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="BWy-n6-7Ha" secondAttribute="bottom" constant="20" id="bwm-Hg-V8c"/>
+                            <constraint firstItem="HH4-Fe-zhF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="eUD-cw-cYi"/>
+                            <constraint firstItem="9Pz-bg-AWM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="gHO-NV-bzO"/>
+                            <constraint firstItem="HH4-Fe-zhF" firstAttribute="top" secondItem="9Pz-bg-AWM" secondAttribute="bottom" constant="8" id="hgI-XH-Zn5"/>
+                            <constraint firstItem="BWy-n6-7Ha" firstAttribute="top" secondItem="HH4-Fe-zhF" secondAttribute="bottom" constant="8" id="quP-hn-Rlc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="browserButton" destination="9Pz-bg-AWM" id="61D-qO-RqU"/>
+                        <outlet property="chatBox" destination="HH4-Fe-zhF" id="60l-Fg-hWf"/>
+                        <outlet property="textBox" destination="BWy-n6-7Ha" id="J23-63-IfV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
